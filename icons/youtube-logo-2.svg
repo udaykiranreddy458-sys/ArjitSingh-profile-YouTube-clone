@@ -1,0 +1,7 @@
+<svg width="120" height="84" viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg">
+  <!-- Red Rounded Rectangle -->
+  <rect width="120" height="84" rx="20" fill="#FF0000"></rect>
+  
+  <!-- White Play Button -->
+  <polygon points="50,30 85,42 50,54" fill="white"></polygon>
+</svg>

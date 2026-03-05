@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arjith Singh - YouTube Clone </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/profile.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header"> 
+                <div class="left-section">
+                    <div class="humburger-icon">
+                        <img src="icons/humburger-symbol.svg" alt="Humburger">
+                    </div>
+                    <div class="youtube-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="yt-ringo2-svg_yt6" width="93" height="20" viewBox="0 0 93 20" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                        <g>
+                            <path d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z" fill="#FF0033"></path>
+                            <path d="M19 10L11.5 5.75V14.25L19 10Z" fill="white"></path>
+                        </g>
+                        <g id="youtube-paths_yt6" fill="white">
+                            <path d="M37.1384 18.8999V13.4399L40.6084 2.09994H38.0184L36.6984 7.24994C36.3984 8.42994 36.1284 9.65994 35.9284 10.7999H35.7684C35.6584 9.79994 35.3384 8.48994 35.0184 7.22994L33.7384 2.09994H31.1484L34.5684 13.4399V18.8999H37.1384Z"></path>
+                            <path d="M44.1003 6.29994C41.0703 6.29994 40.0303 8.04994 40.0303 11.8199V13.6099C40.0303 16.9899 40.6803 19.1099 44.0403 19.1099C47.3503 19.1099 48.0603 17.0899 48.0603 13.6099V11.8199C48.0603 8.44994 47.3803 6.29994 44.1003 6.29994ZM45.3903 14.7199C45.3903 16.3599 45.1003 17.3899 44.0503 17.3899C43.0203 17.3899 42.7303 16.3499 42.7303 14.7199V10.6799C42.7303 9.27994 42.9303 8.02994 44.0503 8.02994C45.2303 8.02994 45.3903 9.34994 45.3903 10.6799V14.7199Z"></path>
+                            <path d="M52.2713 19.0899C53.7313 19.0899 54.6413 18.4799 55.3913 17.3799H55.5013L55.6113 18.8999H57.6012V6.53994H54.9613V16.4699C54.6812 16.9599 54.0312 17.3199 53.4212 17.3199C52.6512 17.3199 52.4113 16.7099 52.4113 15.6899V6.53994H49.7812V15.8099C49.7812 17.8199 50.3613 19.0899 52.2713 19.0899Z"></path>
+                            <path d="M62.8261 18.8999V4.14994H65.8661V2.09994H57.1761V4.14994H60.2161V18.8999H62.8261Z"></path>
+                            <path d="M67.8728 19.0899C69.3328 19.0899 70.2428 18.4799 70.9928 17.3799H71.1028L71.2128 18.8999H73.2028V6.53994H70.5628V16.4699C70.2828 16.9599 69.6328 17.3199 69.0228 17.3199C68.2528 17.3199 68.0128 16.7099 68.0128 15.6899V6.53994H65.3828V15.8099C65.3828 17.8199 65.9628 19.0899 67.8728 19.0899Z"></path>
+                            <path d="M80.6744 6.26994C79.3944 6.26994 78.4744 6.82994 77.8644 7.73994H77.7344C77.8144 6.53994 77.8744 5.51994 77.8744 4.70994V1.43994H75.3244L75.3144 12.1799L75.3244 18.8999H77.5444L77.7344 17.6999H77.8044C78.3944 18.5099 79.3044 19.0199 80.5144 19.0199C82.5244 19.0199 83.3844 17.2899 83.3844 13.6099V11.6999C83.3844 8.25994 82.9944 6.26994 80.6744 6.26994ZM80.7644 13.6099C80.7644 15.9099 80.4244 17.2799 79.3544 17.2799C78.8544 17.2799 78.1644 17.0399 77.8544 16.5899V9.23994C78.1244 8.53994 78.7244 8.02994 79.3944 8.02994C80.4744 8.02994 80.7644 9.33994 80.7644 11.7299V13.6099Z"></path>
+                            <path d="M92.6517 11.4999C92.6517 8.51994 92.3517 6.30994 88.9217 6.30994C85.6917 6.30994 84.9717 8.45994 84.9717 11.6199V13.7899C84.9717 16.8699 85.6317 19.1099 88.8417 19.1099C91.3817 19.1099 92.6917 17.8399 92.5417 15.3799L90.2917 15.2599C90.2617 16.7799 89.9117 17.3999 88.9017 17.3999C87.6317 17.3999 87.5717 16.1899 87.5717 14.3899V13.5499H92.6517V11.4999ZM88.8617 7.96994C90.0817 7.96994 90.1717 9.11994 90.1717 11.0699V12.0799H87.5717V11.0699C87.5717 9.13994 87.6517 7.96994 88.8617 7.96994Z"></path>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="middle-section">
+                    <div class="searchbar">
+                        <input class="searchbar-1"  type="text" placeholder="Search">
+                    </div>
+                    <button class="search-button">
+                        <img class="search-icon" src="icons/search-icon.svg">
+                        <div class="tooltip"> Search </div>
+                    </button>
+                    <button class="mic-button">
+                        <img src="icons/mic-icon-svg.svg">
+                        <div class="tooltip"> Search with your voice </div>
+                    </button>
+                </div>
+                <div class="right-section">
+                    <div class="create-button">
+                        <img src="icons/create-plus-icon.svg">
+                        <span> Create </span>
+                    </div>
+                    <div class="notification-button">
+                        <img class="notification-icon" src="icons/notification-icon.svg">
+                        <div class="tooltip"> Notifications </div>
+                    </div>
+                    <div class="profile-pic">
+                        <img  src="images/profile-pic.jpg">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <nav>
+            <div class="sidebar">
+                <div class="nav-button"><img src="icons/home-icon.svg" alt="Home">
+                    <span> Home </span>
+                </div>
+                <div class="nav-button"><img src="icons/shorts-icon.svg" alt="Shorts">
+                    <span> Shorts</span>
+                </div>
+                <div class="nav-button"><img src="icons/subscription-icon.svg" alt="Subs">
+                    <span> Subscription </span>
+                </div>
+                <div class="nav-button"><img src="icons/profile-icon.svg " alt="You">
+                    <span> You </span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Arjit Singh YouTube Profile -->
+        <div class="profile-page">
+            <div class="banner">
+                <img src="images/banner.jpg" alt="Banner">
+            </div>
+            <!--  -->
+            <div class="profile-info">
+                <div class="profile-picture">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="author-info">
+                    <div class="author-name">
+                        <p> Arijit Singh</p>
+                        <img src="icons/music-icon.svg" alt="icon">    
+                    </div>
+                    <div class="author-stats">
+                        @Official_ArijitSingh
+                        <span class="subs"> • 5.88M subscribers • 173 videos</span>
+                    </div>
+                    <div class="author-information">
+                        <p>Description</p>
+                        <span>
+                            Welcome to Arijit Singh's official YouTube channel known as Oriyon Music - experience heart-warming melodies, poetic lyrics and soulful vocals. Arijit Da is deeply grateful for his fans, and this channel is dedicated to celebrating and sharing his love for music with all of you. Oriyon Music by Arijit Singh will featuring not only songs sung by himself but also those carefully curated by him touching the deepest corners of your soul (Rooh).  
+                            Subscribe and join our community of passionate music lovers and immerse yourself in a world of emotion, inspiration, and endless possibilities.
+                            Email us on our label id - singharijit523@gmail.com
+                        </span>
+                    </div>
+                    <a href="instagram.com/oriyonmusicbyarijitsingh"> </a>
+                    <button class="sub-button"> Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="video-grid">
+                <!-- main vertical grid layout div -->
+                <div>
+                    <!-- inside first vertical layout div -->
+                    <div class="video-image"> 
+                        <img src="images/kalank.avif" alt="Kalank Nahi">
+                        <div class="video-length">
+                            <img src="icons/music-icon-1.svg">
+                            <span class="video-time"> 5:25 </span> 
+                        </div>
+                    </div>
+                    <!-- inside second vertical layout div -->
+                    <div class="video-info">
+                        <!-- inside first Horizontal layout div -->
+                        <div class="channel-profile"> 
+                            <img src="images/zaalima-profile.jpg">
+                        </div>
+                        <!-- inside second Horizontal layout div -->
+                         <div>
+                            <p class="video-title"> Kalank Title Track - Full Video | Madhuri Sonakshi Alia Sanjay Varun | Arjith | Pritam </p>
+                            <p class="video-author"> Zee Music Company </p>
+                            <p class="video-stats"> 395M views &middot; 6 years ago </p>
+                         </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/aaj-se-teri.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 3:17 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/zaalima-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Aaj Se Teri | Padman | Akshay Kumar & Radhika Apte | Arjit Singh | Amit Trivedi</p>
+                            <p class="video-author"> Zee Music Company </p>
+                            <p class="video-stats"> 296M views &middot 8 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/dhurandhar.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 3:51 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/dhurandharprofile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Gehra Hua |Dhurandhar | RanVir, Aditya Dhar, Shashwat, jasmine, Madhubanti, Ayesha, Krystle </p>
+                            <p class="video-author"> Saregama Music </p>
+                            <p class="video-stats"> 153M views &middot 3 months ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/apna-bana-le.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 4:33 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/apna-bana-le-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Apna Bana Le - Bhediya | Varun Dhawan, Kriti Sanon| Sachin-Jigar, Arjit Singh, Amitabh Bhattacharya </p>
+                            <p class="video-author"> Zee Music Company </p>
+                            <p class="video-stats"> 586M views &middot 3 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/channaMereya.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 5:46 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/kesariyaprofile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Channa Mereya - Full Video - ADHM | Ranbir Kapoor , Anushka | Arjit Singh |pritam | Karan Johar</p>
+                            <p class="video-author"> Sony Music India </p>
+                            <p class="video-stats"> 405M views &middot 9 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/animal.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 4:33 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/TumHiHo-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title">  ANIMAL: SATRANGA(song) Ranbir Kapoor,Rashmika|Sandeep V|Arjit,Shreyas P,Siddarth-Garima | Bhushan K</p>
+                            <p class="video-author"> T-series </p>
+                            <p class="video-stats"> 343M &middot 2 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/smajhawan.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 4:26 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/kesariyaprofile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Arjit Singh, Shreya Ghoshal - Samjhawan - Lyric Video |Alia B, Varun D | Humpty Sharma Ki Dulhania </p>
+                            <p class="video-author"> SonyMusicIndiaVEVO </p>
+                            <p class="video-stats"> 398M views &middot 11 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/Kesariya.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 2:53 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/kesariyaprofile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Kesariya - Brahmastra | Ranbir Kapoor, Alia Bhatt | Pritam | Arjit Singh | Amitabh Bhattacharya | 4K </p>
+                            <p class="video-author"> Sony Music India </p>
+                            <p class="video-stats"> 605M views &middot 3 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/TumHiHo.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 5:10 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/TumHiHo-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Ashiqui 2: Tum Hi Ho Full Song | Aditya Roy Kapur | Shraddha Kapoor | Arjit Singh | Mithoon</p>
+                            <p class="video-author"> T-Series </p>
+                            <p class="video-stats"> 481M views &middot 12 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/zaalima.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 5:07 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/zaalima-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Zaalima | Raees | Shah Rukh Khan | Arjit Singh & Harshdeep Kaur | JAM8 | Pritam </p>
+                            <p class="video-author"> Zee Music Company</p>
+                            <p class="video-stats"> 482M views &middot 9 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/ranjhana.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 6:10 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/zaalima-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Raanjhana - Priyank Sharmaaa & Hina Khan | Asad Khan ft. Arjit Singh| Raqueed | ZZee Music Originals</p>
+                            <p class="video-author"> Zee Music Company </p>
+                            <p class="video-stats"> 112M views &middot 6 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/lutt-putt-gaya.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 3:02 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/TumHiHo-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Lutt Putt Gaya (Full Video) Shah Rukh Khan, Taapsee,Rajkumar H, Pritam,Arjit,Swanand,IP Singh | Dunki</p>
+                            <p class="video-author"> T-Series </p>
+                            <p class="video-stats"> 136M views &middot 2 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/yeh-mithoor-mera.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 3:32 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/zaalima-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Yeh Fitoor Mera - Full Video | Fitoor | Aditya Roy Kapur, Katrina Kaif | Arjit Singh | Amit Trivedi </p>
+                            <p class="video-author"> Zee Music Company</p>
+                            <p class="video-stats"> 38M views &middot 9 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/ve-kamleya.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 3:10 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/dhurandharprofile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Ve Kamleya | Rocky Aur Rani Kii Prem Kahaani | Ranveer | Alia | Pritam | Amitabh | Shreya</p>
+                            <p class="video-author"> Saregama Music </p>
+                            <p class="video-stats"> 296M views &middot 2 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="video-image">
+                            <img src="images/chaleya.avif">
+                            <div class="video-length">
+                                <img src="icons/music-icon-1.svg">
+                                <span class="video-time"> 3:08 </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-profile">
+                            <img src="images/TumHiHo-profile.jpg">
+                        </div>
+                        <div>
+                            <p class="video-title"> Gehra Hua |Dhurandhar | RanVir, Aditya Dhar, Shashwat, jasmine, Madhubanti, Ayesha, Krystle </p>
+                            <p class="video-author"> Saregama Music </p>
+                            <p class="video-stats"> 153M views &middot 3 months ago </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </main>
+    </body>
+</html>
